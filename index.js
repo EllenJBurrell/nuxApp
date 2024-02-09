@@ -63,7 +63,7 @@ proxy.on('error', (error, req, res) => {
 app.use((req, res) => {
   if (__DEVELOPMENT__) {
     // Do not cache webpack stats: the script file would change since
-    // hot module replacement is enabled in the development env
+    // hot module replacement is enabled in the development env for API
     webpackIsomorphicTools.refresh();
   }
   const client = new ApiClient(req);
