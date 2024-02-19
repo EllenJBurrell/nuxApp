@@ -70,6 +70,7 @@ app.use((req, res) => {
   const memoryHistory = createHistory(req.originalUrl);
   const store = createStore(memoryHistory, client);
   const history = syncHistoryWithStore(memoryHistory, store);
+  const URL = window.location.href;
 
   function hydrateOnClient() {
     res.send('<!doctype html>\n' +
