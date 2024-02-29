@@ -10,7 +10,7 @@ import createStore from './redux/create';
 import ApiClient from './helpers/ApiClient';
 import Html from './helpers/Html';
 import PrettyError from 'pretty-error';
-import http from 'http';
+import https from 'https';
 
 import { match } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
